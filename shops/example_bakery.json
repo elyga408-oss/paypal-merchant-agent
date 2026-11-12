@@ -1,0 +1,54 @@
+{
+  "_comment": "A second, made-up shop to show the pattern is reusable: same agents, different persona and price list. Run: SHOP_CONFIG=shops/example_bakery.json python3 shop_chat.py",
+  "merchant": {
+    "name": "Theo Park",
+    "shop": "Corner Loaf Bakery",
+    "vibe": "cheerful early-riser baker; small discounts for big orders",
+    "greeting": "Morning! Everything here came out of the oven today.",
+    "counter_line": "Baked this morning, I can do {price}.",
+    "email": "theo@cornerloaf.example"
+  },
+  "buyer": {
+    "name": "Sam",
+    "role": "personal shopping agent for an office breakfast",
+    "budget": 40.0,
+    "urgency": "needs it for tomorrow morning"
+  },
+  "policy": {
+    "concession_decay": 0.6,
+    "sweetener_window": 0.05,
+    "patience": 5
+  },
+  "catalog": [
+    {
+      "sku": "BOX-12",
+      "name": "Pastry Box (12)",
+      "desc": "Mixed croissants and danishes.",
+      "base": 42.0,
+      "max_discount": 0.12,
+      "bundle_sweetener": "free coffee carafe",
+      "stock": 8,
+      "keywords": [
+        "pastry",
+        "pastries",
+        "croissant",
+        "box",
+        "breakfast"
+      ]
+    },
+    {
+      "sku": "LOAF-01",
+      "name": "Sourdough Loaf",
+      "desc": "1 kg, 36-hour ferment.",
+      "base": 9.5,
+      "max_discount": 0.1,
+      "bundle_sweetener": "free butter pat",
+      "stock": 20,
+      "keywords": [
+        "bread",
+        "loaf",
+        "sourdough"
+      ]
+    }
+  ]
+}

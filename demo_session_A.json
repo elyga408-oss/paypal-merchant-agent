@@ -1,0 +1,43 @@
+{
+  "label": "A \u2014 the-deal: Dana's tune-up \u2014 deal inside budget",
+  "sku": "TUNE-01",
+  "product": "Full Season Tune-Up",
+  "budget": 90.0,
+  "transcript": [
+    {
+      "from": "merchant",
+      "action": "counter",
+      "amount": 95.0,
+      "note": "Full Season Tune-Up \u2014 $95.00. Welcome to Vega Cycle Works. Everything listed is tuned by hand, same week.",
+      "turn": 0
+    },
+    {
+      "from": "buyer",
+      "action": "counter",
+      "amount": 58.9,
+      "note": "Opening offer at $58.90.",
+      "turn": 1
+    },
+    {
+      "from": "merchant",
+      "action": "counter",
+      "amount": 88.59,
+      "note": "Hand-tuned work, I can do $88.59.",
+      "turn": 2
+    },
+    {
+      "from": "buyer",
+      "action": "accept",
+      "amount": 88.59,
+      "note": "Within budget \u2014 take the deal.",
+      "turn": 3
+    }
+  ],
+  "outcome": {
+    "result": "deal",
+    "price": 88.59,
+    "turns": 4,
+    "note": "buyer accepted at $88.59."
+  },
+  "verified": true
+}

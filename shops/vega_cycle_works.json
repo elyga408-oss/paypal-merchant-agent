@@ -1,0 +1,69 @@
+{
+  "_comment": "One shop = one file. Copy this, change the persona and price list, and run with SHOP_CONFIG=shops/your_shop.json. Prices and floors stay in deterministic code; the LLM never sets a price. 'keywords' are optional words the offline (no-LLM) parser uses to pick a product.",
+  "merchant": {
+    "name": "Marisol Vega",
+    "shop": "Vega Cycle Works",
+    "vibe": "warm, no-nonsense small-biz owner; haggles but never desperate",
+    "greeting": "Welcome to Vega Cycle Works. Everything listed is tuned by hand, same week.",
+    "counter_line": "Hand-tuned work, I can do {price}.",
+    "email": "marisol@vegacycleworks.example"
+  },
+  "buyer": {
+    "name": "Dana",
+    "role": "personal shopping agent for a bike commuter",
+    "budget": 90.0,
+    "urgency": "needs the tune-up this week",
+    "ask_style": "opens at 62% of ask, counters +30% of remaining gap, patience 4",
+    "email": "dana@example.com"
+  },
+  "policy": {
+    "concession_decay": 0.55,
+    "sweetener_window": 0.05,
+    "patience": 6
+  },
+  "catalog": [
+    {
+      "sku": "TUNE-01",
+      "name": "Full Season Tune-Up",
+      "desc": "Drivetrain clean, brake bleed, wheel true, safety check.",
+      "base": 95.0,
+      "max_discount": 0.15,
+      "bundle_sweetener": "free bottle cage install",
+      "stock": null,
+      "keywords": [
+        "tune",
+        "service",
+        "brake",
+        "gears"
+      ]
+    },
+    {
+      "sku": "HELM-02",
+      "name": "Commuter Helmet (matte black, M)",
+      "desc": "CPSC-certified, 380g, 12 vents, rear LED mount.",
+      "base": 74.0,
+      "max_discount": 0.1,
+      "bundle_sweetener": "free visor clip",
+      "stock": 3,
+      "keywords": [
+        "helmet",
+        "head"
+      ]
+    },
+    {
+      "sku": "LAMP-03",
+      "name": "900-Lumen Front Light",
+      "desc": "USB-C, 6h steady, IPX6, half-bracket included.",
+      "base": 48.0,
+      "max_discount": 0.2,
+      "bundle_sweetener": "free set of AAA backups",
+      "stock": 12,
+      "keywords": [
+        "light",
+        "lamp",
+        "lumen",
+        "night"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# secrets & local state — never commit
+.env
+.env.*
+!.env.example
+token_state.json
+*.bak-*
+*.bak
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# virtualenvs
+venv/
+.venv/
+env/
+# recordings / large local artifacts
+*.cast
+*.mp4
+*.log
